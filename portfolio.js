@@ -9,6 +9,7 @@ projectsButton.addEventListener("click", function () {
 
 schoolButton.addEventListener("click", function () {
   document.location.href = "./school.html";
+
 });
 
 aboutButton.addEventListener("click", function () {

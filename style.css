@@ -17,11 +17,25 @@ main {
   padding: 0;
 }
 
+#contact {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+
+#contact div, #contact h2 {
+    flex: 1;
+
+}
+
 #header {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  text-align: center;
 }
 
 #links {
@@ -42,6 +56,15 @@ main {
   height: 50%;
   border-radius: 10px;
   margin: 10px;
+}
+
+#projects:hover,
+#school:hover,
+#about:hover,
+#resume:hover {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px black;
+  cursor: pointer;
 }
 
 #about-resume {
@@ -87,8 +110,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: black;
+  background-color: gray;
   color: black;
+  margin-top: 100px;
 }
 
 .project {
@@ -97,7 +121,7 @@ main {
   justify-content: space-between;
   align-items: center;
   border-radius: 20px;
-  background-color: gray;
+  background-color: white;
   margin: 10px;
   padding: 10px;
 }
@@ -150,7 +174,8 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 20px
+  margin: 20px;
+  margin-top: 100px;
 }
 
 h1 {
@@ -165,6 +190,7 @@ h1 {
 }
 
 #schooling img {
+  width: 10px;
   flex: 0.5;
   object-fit: contain;
   align-self: center;
@@ -173,11 +199,13 @@ h1 {
 /* //////////////////////// header /////////////////// */
 
 ul {
+  position: fixed;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  width: 100%;
 }
 
 li {
@@ -198,4 +226,8 @@ li a:hover {
 
 #nav-home {
   float: left;
+}
+
+#nav-home a {
+  color: red;
 }
